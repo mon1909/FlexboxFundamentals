@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 33.33%;
+    height: 200px;
+}
+
